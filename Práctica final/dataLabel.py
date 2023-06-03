@@ -1,11 +1,16 @@
 import cv2
 import os
+import numpy as np
 #Function create labels for the images
 
 
 labels = [0]
 facesData = []
-facesData.append(cv2.imread('Desconocido.jpg',0))
+if os.path.exists('Desconocido.jpg'):
+    facesData.append(cv2.imread('Desconocido.jpg',0))
+else:
+    #Add a blank 150x150 image if the file doesn't exist
+    facesData.append(np.zeros((150,150),dtype=np.uint8))
 usernames = ['Desconocido']
 
 def faceLabels():
