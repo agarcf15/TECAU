@@ -1,3 +1,9 @@
+"""
+Alejandro García Fernández
+Dennis Wong Vasquez
+Manuel Clerigué García
+Xabier Barguilla Arribas
+"""
 import cv2
 import os
 
